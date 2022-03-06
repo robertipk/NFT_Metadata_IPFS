@@ -10,7 +10,6 @@ const POKEMON_PHOTO_PATH = 'assets/original_150_pokemon_photos/'
 // Process CSV file
 var parser = parse({columns: true}, function (err, records) {
     for (let index = 0; index < 30; index++) {
-    //records.forEach(element => {
         var element = records[index]
         // Each row of the CSV represents a single Pokemon.
         // Extract the name, description, and number.
